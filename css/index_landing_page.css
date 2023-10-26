@@ -1,0 +1,1564 @@
+@import url(/fonts/index.css);
+
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1b1f22;
+    /* overflow-x: hidden; */
+}
+header {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #FFF;
+	 position: relative;
+	 z-index: 1;
+}
+
+.header_content_mobile {
+    width: 1760px;
+    height: 32px;
+    display: flex;
+    border: solid blue 3px;
+    color: #fff;
+    display: none;
+}
+
+.header_content_inside {
+    display: flex;
+    width: 1760px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tel_lang {
+    display: flex;
+    align-items: center;
+    width: 264px;
+    justify-content: space-between;
+}
+
+.header_content {
+    /* border: 3px solid red; */
+    width: 1314px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    /* background: #38086465; */
+}
+
+.logo img {
+    width: 60px;
+    height: 24px;
+}
+
+.search {
+    display: none;
+}
+
+.buttons_desctop {
+    display: none;
+}
+
+.nav_menu_fix {
+		position: absolute;
+		display: flex;
+		width: 252px;
+		height: 25px;
+		transform: rotate(-90deg);
+		flex-direction: row-reverse;
+		justify-content: center;
+		flex-shrink: 0;
+		color: var(--gray-font, #7F8589);
+		text-align: right;
+		font-family: HelveticaNeueCyr;
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 550;
+		line-height: 135%; /* 17.55px */
+		letter-spacing: 1.3px;
+		text-transform: uppercase;
+		position: fixed;
+		top: 400px;
+		left:  -50px;
+		border: none;
+		text-decoration: none;
+		color:#7F8589;   
+		cursor: pointer;
+
+}
+.nav_menu_fix a {
+    text-decoration: none;
+    color:#7F8589
+}
+
+.active a {
+    color: red; /* Цвет активной ссылки */
+}
+
+ul a {
+    color: gray; /* Цвет неактивных ссылок */
+    text-decoration: none;
+    transition: color 0.3s; /* Плавное изменение цвета */
+}
+
+ul a:hover {
+    color: rgb(236, 221, 221); /* Цвет при наведении на ссылку */
+}
+
+
+
+.hardness {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centereddiv .switch {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+}
+.centereddiv .switch input {
+  display:none;
+}
+.centereddiv .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #333333;
+  transition: .4s;
+}
+
+.centereddiv .slider:before {
+  position: absolute;
+  content: "";
+  height: 42px;
+  width: 40px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+.centereddiv input:checked + .slider {
+  background-color: #00FF00;
+}
+
+.centereddiv input:focus + .slider {
+  box-shadow: 0 0 1px #00FF00;
+}
+
+.centereddiv input:checked + .slider:before {
+  transform: translateX(52px);
+}
+
+.centereddiv .slider.round {
+  border-radius: 34px;
+}
+
+.centereddiv .slider.round:before {
+  border-radius: 50%;
+}
+
+
+
+
+
+.nav_menu_fix .active a {
+    color: var(--red, #FF3E41);
+    font-family: HelveticaNeueCyr;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 135%;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+
+.nav_menu_desc {
+    display: flex;
+    width: 960px;
+    height: 72px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* тестировочный слайдер */
+.slider-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    transition: transform 4s ease;
+}
+
+.slide {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(5px); */
+    /* transition: filter 3.5s ease; */
+}
+
+.slide1 {
+    background-image: url("/img/big_pictures_middle.png");
+    filter: none;
+}
+
+.slide1 .active  
+
+.slide2 {
+    background-image: url("/img/tverdomer_1.png");
+    filter: blur(5px);
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider_tverdomer {
+    display: flex;
+    width: 1540px;
+    justify-content: space-evenly;
+}
+.slide {
+    width: 300px;
+    height: 200px;
+    background: none;
+    background-size: cover;
+    background-position: center;
+}
+#left-button, #right-button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+}
+#left-button {
+    margin-right: 20px;
+    position: absolute;
+    width: 573px;
+    height: 106px;
+    flex-shrink: 0;
+    color: var(--white, #FFF);
+    font-family: HelveticaNeueCyr;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 90px */
+    background: none;
+    left: 0;
+    
+}
+
+#left-button span {
+    width: 386px;
+    height: 15px;
+    flex-shrink: 0;
+    color: var(--, #CBCECF);
+    font-family: HelveticaNeueCyr;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 135%; /* 21.6px */
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+}
+
+
+
+
+/* Footer */
+footer {
+    width: 100%;
+    border: 2px solid red;
+    background: #0f1214;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_all_content {
+    width: 1314px;
+    height: 441px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_content {
+    width: 1234px;
+    height: 315px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1314px;
+    color: #fff;
+}
+
+.footer_logo {
+    position: relative;
+    bottom: 80px;
+}
+
+.footer_products {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.footer_products h5 {
+    color: var(--white, #fff);
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 18.75px */
+    position: relative;
+    left: 5px;
+}
+
+.footer_products_menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_company {
+    display: flex;
+    height: 309px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-items: start;
+    justify-content: center;
+}
+
+.footer_company_menu_first {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_company_menu_second {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_contacts {
+    width: 352px;
+    height: 315px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.footer_contacts_number .footer-contact-button {
+    width: 272px;
+    color: var(--white, #fff);
+    font-family: HelveticaNeueCyr;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 125%; /* 40px */
+    background: none;
+}
+
+.footer_contacts_call .footer-contact-button {
+    display: flex;
+    margin-top: 22px;
+    width: 352px;
+    flex-direction: row;
+    justify-content: start;
+    color: var(--white, #fff);
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 18.75px */
+    background: none;
+    gap: 26px;
+}
+
+.footer_contacts_mail .footer-contact-button {
+    width: 352px;
+    margin-top: 22px;
+    color: var(--white, #fff);
+    display: flex;
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 18.75px */
+    background: none;
+    gap: 26px;
+}
+
+.footer_office {
+    width: 272px;
+    height: 81px;
+}
+
+.footer_office h5 {
+    margin-top: 66px;
+    color: var(--white, #fff);
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 18.75px */
+}
+
+.footer_office p {
+    color: var(--gray-font, #7f8589);
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 22.5px */
+}
+
+.footer_company h5,
+.footer_company_menu_second {
+    color: var(--white, #fff);
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 18.75px */
+    position: relative;
+    left: 5px;
+}
+
+.footer_bottom {
+    margin-top: 65px;
+    color: var(--gray-font, #7f8589);
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 18.75px */
+}
+/* End Footer */
+
+/* Стили для кнопки "Купить" */
+.buy-button {
+    background: none;
+    border: none;
+    color: black;
+    text-decoration: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 3px;
+    border-bottom: 2px solid #ccc; /* Серое подчеркивание по умолчанию */
+    transition: border-color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+.buy-button:hover {
+    border-color: red; /* Красное подчеркивание при наведении */
+}
+
+/* Стили для фиксированного меню */
+.fixed-menu {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+/* Стили для иконок мессенджеров */
+.messenger-icon {
+    background-size: cover;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Цвета для иконок */
+.telegram-icon {
+    background-image: url("/img/svg/Button_telegram.svg");
+    border-radius: 25px;
+}
+
+.whatsapp-icon {
+    background-image: url("/img/svg/Button_whatsapp.svg");
+    border-radius: 25px;
+    margin-top: 16px;
+}
+
+.mail-icon {
+    background-image: url("/img/svg/Button_email.svg");
+    border-radius: 25px;
+    margin-top: 16px;
+}
+
+.messenger-app-icon {
+    background-image: url("/img/svg/Button_masanger.svg");
+    border-radius: 25px;
+    margin-top: 16px;
+}
+
+
+/* Показываем контент при наведении на иконку */
+.messenger-icon:hover + .messenger-content {
+    display: block;
+    background-color: #0088cc;
+}
+
+.content-wrapper-image {
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    color: #FFF;
+    
+}
+
+
+
+
+
+
+.play-button {
+    
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+
+.video-link {
+    display: none;
+   
+}
+
+/* Стили для текста вокруг кнопки */
+.content-wrapper-image {
+  position: absolute;
+  right: 245px;
+  top: 120px;
+  display: flex;
+  align-items: center;
+}
+
+
+.content-wrapper-header-title {
+    display: flex;
+    width: 371px;
+    height: 125px;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--, #CBCECF);
+    font-family: HelveticaNeueCyr;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135%; /* 43.2px */
+    text-align: left;
+}
+
+
+/* анимация вокруг кнопки */
+
+
+.play-button {
+    width: 100px;
+    height: 100px;
+    background-image: url("/img/svg/Play\ 2.svg"); /* Замените на изображение вашей кнопки play */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.rotate-text {
+    position: absolute;
+    top: -10px;
+    width: 100px;
+    height: 500px;
+    left: 35px;
+    
+}
+
+.rotate-text span {
+    display: block;
+    position: absolute;
+    transform-origin: 50% 350%;
+
+    
+}
+
+.rotate-text span:nth-child(1) {
+    animation: rotateText 12s linear infinite 0s;
+}
+
+.rotate-text span:nth-child(2) {
+    animation: rotateText 12s linear infinite 0.5s;
+}
+
+.rotate-text span:nth-child(3) {
+    animation: rotateText 12s linear infinite 1s;
+}
+
+.rotate-text span:nth-child(4) {
+    animation: rotateText 12s linear infinite 1.5s;
+}
+
+.rotate-text span:nth-child(5) {
+    animation: rotateText 12s linear infinite 2s;
+}
+
+.rotate-text span:nth-child(6) {
+    animation: rotateText 12s linear infinite 2.5s;
+}
+
+.rotate-text span:nth-child(7) {
+    animation: rotateText 12s linear infinite 3s;
+}
+.rotate-text span:nth-child(8) {
+    animation: rotateText 12s linear infinite 3.5s;
+}
+.rotate-text span:nth-child(9) {
+    animation: rotateText 12s linear infinite 4s;
+}
+.rotate-text span:nth-child(10) {
+    animation: rotateText 12s linear infinite 4.5s;
+}
+.rotate-text span:nth-child(11) {
+    animation: rotateText 12s linear infinite 6s;
+    color: red;
+}
+.rotate-text span:nth-child(12) {
+    animation: rotateText 12s linear infinite 6.5s;
+    color: red;
+}
+.rotate-text span:nth-child(13) {
+    animation: rotateText 12s linear infinite 7s;
+    color: red;
+}
+.rotate-text span:nth-child(14) {
+    animation: rotateText 12s linear infinite 7.5s;
+    color: red;
+}
+.rotate-text span:nth-child(15) {
+    animation: rotateText 12s linear infinite 8s;
+    color: red;
+}
+
+
+@keyframes rotateText {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+/* конец анимации */
+
+
+.buttons {
+    display: flex;
+    width: 144px;
+    justify-content: space-between;
+    align-items: center;
+	 background: none;
+}
+button {
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.nav_menu_desc button:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #ff0000;
+    transition: border-color 5.3s; /* Плавное изменение цвета при наведении /*  */
+}
+
+.nav_menu_desc button:hover {
+    border-color: red; /* Красное подчеркивание при наведении */
+    transition: border-color 2.3s; /* Плавное изменение цвета при наведении /*  */
+}
+.nav_menu_desc button {
+    background: none;
+	 border: none;
+    padding: 0;
+    color: var(--white, #fff);
+    font-family: HelveticaNeueCyr;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+.buy-button {
+    background: none;
+    border: none;
+    color: black;
+    text-decoration: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 3px;
+    border-bottom: 2px solid #ccc; /* Серое подчеркивание по умолчанию */
+    transition: border-color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+.buy-button:hover {
+    border-color: red; /* Красное подчеркивание при наведении */
+}
+
+.lang span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* конец */
+
+/* Стили для бургер-меню */
+.burger-menu {
+    display: none;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 3px 0;
+}
+
+
+/* Стили для пунктов меню */
+.menu-item {
+    color: #666; /* Серый цвет текста */
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+.menu-item:hover {
+    color: #fff; /* Белый цвет текста при наведении */
+}
+
+
+/* CSS */
+.image-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.image-container img {
+    max-width: 100%;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.image-controls {
+    display: flex;
+    justify-content: center;
+}
+
+.image-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.image-dot.active {
+    background-color: #f00; /* Цвет активной точки */
+}
+.hardness-measurement {
+  width: 447px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.hardness-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.hardness-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hardness-info {
+  font-size: 16px;
+}
+
+.hardness-tolerance {
+  font-size: 16px;
+}
+.gosregister-block {
+	width: 447px;
+	padding: 20px;
+	margin-top: 20px;
+	color: #CBCECF;
+	font-family: HelveticaNeueCyr;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 550;
+	line-height: 135%; /* 20.25px */
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.left_block_title h2 {
+	color: var(--white, #FFF);
+	font-family: HelveticaNeueCyr;
+	font-size: 56px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 125%; /* 70px */
+}
+
+.hardness-title {
+	color: #FFF;
+	font-family: HelveticaNeueCyr;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 135%; /* 27px */
+}
+
+.hardness-info {
+	color: #CBCECF;
+	font-family: HelveticaNeueCyr;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 550;
+	line-height: 135%; /* 20.25px */
+}
+
+.hardness-tolerance {
+	color: #898989;
+	text-align: right;
+	font-family: HelveticaNeueCyr;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 135%; /* 20.25px */
+}
+
+.block-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFF;
+	font-family: HelveticaNeueCyr;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 550;
+	line-height: 135%; /* 27px */
+}
+
+.block-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.red-dot {
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.list-text {
+  font-size: 16px;
+}
+
+
+.content_text {
+	width: 1556.9px;
+	height: 772px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid red;
+}
+
+.content_text_left_block {
+	width: 477px;
+	height: 650px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+.left_block_subtitle {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 439px;
+}
+.our_product {
+    width: 100%;
+    height: 1016px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.our_product_content {
+    width: 1514px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-category-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product-category-menu button:nth-child(3) {
+    display: flex;
+    flex-direction: flex-end;
+    justify-content: end;
+}
+
+.product-category-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.centered-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* Для центрирования по вертикали */
+}
+
+.category-button {
+    /* Стили для кнопок категорий (Твердомеры и Меры твердости) */
+    transition: background 1s;
+    color: var(--main-dark, #1B1F22);
+    font-family: HelveticaNeueCyr;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 135%; /* 24.3px */
+}
+
+.category-button:hover, .catalog-button:hover {
+    border: red 1px solid;
+    border-radius: 60px;
+    color: #ff0000;
+    transition: 1.5s;
+    
+}
+
+.catalog-button {
+    /* Стили для кнопки "В каталог" */
+    color: #000;
+    align-self: flex-end; /* Перемещение кнопки "В каталог" вниз */
+    color: var(--main-dark, #1B1F22);
+    font-family: HelveticaNeueCyr;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 135%; /* 24.3px */
+}
+/* Стили для блока "Продукция" */
+.product-block {
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Стили для названия "Продукция" */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Стили для пунктов меню */
+.menu-item {
+    color: #666; /* Серый цвет текста */
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+.menu-item:hover {
+    color: #fff; /* Белый цвет текста при наведении */
+}
+
+/* Стили для кнопки "Все Публикации" */
+.all-publications-button {
+    text-decoration: underline; /* Подчеркивание текста */
+    color: #000; /* Черный цвет текста по умолчанию */
+    cursor: pointer;
+    transition: color 0.3s; /* Плавное изменение цвета текста при наведении */
+}
+
+.all-publications-button:hover {
+    color: red; /* Красный цвет текста при наведении */
+}
+
+/* Стили для контейнера слайдера */
+
+
+/* Стили для заголовка товара */
+h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Стили для изображений товаров */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Стили для меню переключения картинок */
+.image-controls {
+    display: flex;
+    justify-content: center;
+}
+
+.image-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+/* Стили для информации о товаре */
+.product-info {
+    margin: 10px 0;
+}
+
+.available {
+    color: green;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.new-price {
+    color: #f00;
+}
+
+/* Стили для кнопок "Добавить в корзину" и "Купить" */
+.add-to-cart-button,
+.buy-now-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    /* padding: 10px 20px; */
+    margin: 10px 0;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.add-to-cart-button:hover,
+.buy-now-button:hover {
+    background-color: #0056b3;
+}
+
+
+.products-container {
+  display: none;
+}
+
+.products-container.active {
+  display: block;
+}
+/* CSS */
+.image-container {
+    display: flex;
+    overflow: hidden;
+}
+
+.image-container img {
+    max-width: 100%;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.image-controls {
+    display: flex;
+    justify-content: center;
+}
+
+.image-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.image-dot.active {
+    background-color: #f00; /* Цвет активной точки */
+}
+
+/* Добавьте стили для кнопок добавить в корзину и купить */
+.slider {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+/* Стили для слайдов */
+.slide {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Стили для картинок */
+.product-image {
+    max-width: 100%;
+    display: none;
+}
+
+/* Стили для активной картинки */
+.product-image.active {
+    display: block;
+}
+
+/* Стили для точек */
+.image-controls {
+    text-align: center;
+}
+
+.image-dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.image-dot.active {
+    background-color: #333;
+}
+
+.slide {
+    width: 418px;
+    height: 595px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* конец */
+/* Стили для заголовка */
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Стили для слайдера */
+.slider_two {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    background: #1b1f22;
+    align-items: center;
+}
+
+.slide_two {
+    width: 418px;
+    height: 410px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1f22; /* Серый фон для 1 и 3 блоков */
+}
+
+.image {
+    width: 194px; /* Размер картинок во 2 блоке */
+    height: 190px;
+
+}
+
+/* Стили для стрелочек переключения */
+.arrow {
+    width: 100px;
+    height: 20px;
+    /* background-color: #000; */ /* Черный цвет стрелочек */
+    color: #fff; /* Белый цвет стрелочек */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Конец слайдера */
+
+.ultrasonic_sensor {
+	width: 100%;
+	display: flex;
+	border: 2px solid blue;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.ultrasonic_sensor_content {
+	width: 1314.74px;
+	height: 795px;
+	border: 2px solid #00FF00;
+}
+
+.ultrasound-sensor {
+  width: 321.74px;
+  height: 382px;
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.subtitle {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.info-block {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.red-dot {
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sensor_left_content {
+	width: 321px;
+	height: 382px;
+	display: flex;
+}
+
+.ultrasonic_sensor_content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ultrasound-sensor h2 {
+	color: var(--white, #FFF);
+	font-family: HelveticaNeueCyr;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 135%; /* 54px */
+	text-align: start;
+}
+
+.ultrasound-sensor p {
+	color: #CBCECF;
+font-family: HelveticaNeueCyr;
+font-size: 16px;
+font-style: normal;
+font-weight: 550;
+line-height: 150%; /* 24px */
+text-align: start;
+}
+
+.sensor_center_content {
+    width: 764px;
+    height: 795px;
+}
+
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.point {
+  position: absolute;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.top-left {
+    position: absolute;
+    top: 10px;
+    left: 245px;
+    transition: background-image 1s;
+}
+
+.top-left:hover {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='49' height='49' viewBox='0 0 49 49' fill='none'%3E%3Ccircle cx='24.5' cy='24.5' r='24.1939' fill='%237F8589' fill-opacity='0.4' stroke='%237F8589' stroke-width='0.612176'/%3E%3Ccircle cx='24.5' cy='24.5' r='7.5' fill='%23FF3E41'/%3E%3C/svg%3E");
+    width: 49px; /* Ширина изображения */
+    height: 49px; /* Высота изображения */
+    transition: background-image 1s;
+}
+
+
+
+.top-right {
+  top: 65px;
+  right: 530px;
+}
+
+.top-right:hover {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='49' height='49' viewBox='0 0 49 49' fill='none'%3E%3Ccircle cx='24.5' cy='24.5' r='24.1939' fill='%237F8589' fill-opacity='0.4' stroke='%237F8589' stroke-width='0.612176'/%3E%3Ccircle cx='24.5' cy='24.5' r='7.5' fill='%23FF3E41'/%3E%3C/svg%3E");
+}
+
+.bottom-left {
+  bottom: 255px;
+  left: 195px;
+}
+
+.bottom-right {
+  bottom: 130px;
+  left: 130px;
+}
+
+.point[data-text]:before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 361px;
+    height: 181px;
+    padding: 5px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='181' viewBox='0 0 360 181' fill='none'%3E%3Cpath d='M16.3255 20C16.3255 8.9543 25.2798 0 36.3255 0H339.743C350.789 0 359.743 8.95431 359.743 20V90.5V161C359.743 172.046 350.789 181 339.743 181H36.3255C25.2798 181 16.3255 172.046 16.3255 161V110.048C16.3255 108.454 15.691 106.925 14.562 105.799L2.67339 93.9448C0.455126 91.733 0.311778 88.1868 2.34428 85.8031L14.8912 71.0882C15.817 70.0024 16.3255 68.6222 16.3255 67.1953V20Z' fill='white'/%3E%3C/svg%3E");
+    background-size: cover;
+    color: var(--2, #454545);
+    font-family: HelveticaNeueCyr;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%; /* 20.25px */
+    text-align: center;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.top-left[data-text]:before {
+    bottom: -140px;
+    left: 235px;
+}
+
+.top-right[data-text]:before {
+    bottom: -140px;
+    left: 235px;
+}
+.bottom-left[data-text]:before {
+    bottom: -70px;
+    left: 235px;
+}
+.bottom-right[data-text]:before {
+    bottom: -70px;
+    left: 235px;
+}
+.point:hover[data-text]:before {
+  opacity: 1;
+  visibility: visible;
+}
+.sensor_right_content {
+    color: #FFF;
+    width: 291px;
+    height: 412px;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+h2 {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+columns {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.column {
+    flex-basis: 30%;
+    text-align: center;
+    color: var(--red, #FF3E41);
+    text-align: right;
+    font-family: HelveticaNeueCyr;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 22.5px */
+}
+
+.sensor_right_content p {
+  word-spacing: 5px;
+}
+.sinsor_right_content_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.title_name {
+    width: 264px;
+    height: 194px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.title_name div:nth-child(1), .title_name div:nth-child(3) {
+    word-spacing: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+}
+
+.title_name div:nth-child(2) {
+    word-spacing: 22px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+}
+
+.title_name div:nth-child(4) {
+    word-spacing: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+}
+.sinsor_right_content_title .columns {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.sinsor_right_content_title p:nth-child(4), .sinsor_right_content_title p:nth-child(5), .sinsor_right_content_title p:nth-child(6) {
+    text-align: left;
+    border: 2px solid red;
+}
+
+.sinsor_right_content_title h2 {
+    text-align: left;
+}
+
+.sinsor_right_content_title span {
+    color: var(--red, #FF3E41);
+    text-align: right;
+    font-family: HelveticaNeueCyr;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%; /* 22.5px */
+}
+.dynamic_sensor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dynamic_sensor_content {
+    width: 1260px;
+    height: 856px;
+}
+.dynamic_sensor_content_left {
+    width: 851px;
+    height: 856px;
+}
+
